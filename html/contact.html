@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Matteo • Web Developer</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body class="contact-body">
+<div id="nav-icon4">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<svg class="burger" id="burger" width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="2" y1="26" x2="36" y2="26" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <line x1="5" y1="14" x2="32" y2="14" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <line x1="2" y1="2" x2="36" y2="2" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
+<svg class="cache cross" id="cross" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="2.82843" y1="2" x2="26.8701" y2="26.0416" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <line x1="2" y1="26.0416" x2="26.0416" y2="2" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
+
+<div class="contact-h1">
+    <h1>CONTACTE</h1>
+    <h1>MOI.</h1>
+</div>
+<div class="contact-contenue">
+    <div id="form-contact">
+        <form class="form-contact" onsubmit="sendEmail(event)">
+            <h1>Ecrit moi</h1>
+            <div class="input-icons">
+                <i class="icon"><img src="../img/user.svg" alt=""></i>
+                <input type="text" id="name" placeholder="Nom" class="input-field">
+            </div>
+            <div class="input-icons">
+                <i class="icon"><img src="../img/mail.svg" alt=""></i>
+                <input type="email" id="email" placeholder="Email" class="input-field">
+            </div>
+            <div class="input-icons">
+                <textarea id="message" rows="15" cols="50" placeholder="Message"></textarea>
+            </div>
+            <div class="input-icons">
+                <input type="submit" value="Send" class="input-field submit">
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function sendEmail(event) {
+        event.preventDefault();
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (name == "" || email == "" || message == "") {
+            alert("Remplissez tous les champs");
+            return;
+        }
+        else{
+            alert("Mail envoyé !");
+            return;
+        }
+    }
+</script>
+<img class="contact-phone" src="../img/phone.png" alt="">
+<img src="../img/colorfilter.png" class="filter">
+<div class="menu-burger cache" id="blur">
+    <div>
+        <a href="index.html">Accueil.<span><img class="bulb cache" id="bulbhome" src="../img/bulb.png" alt=""></span></a>
+        <a href="contact.html">Contact.<span><img class="bulb cache" id="bulbcontact"  src="../img/bulb.png" alt=""></span></a>
+        <a href="fun.html">Animation.<span><img class="bulb cache" src="../img/bulb.png" alt=""></span></a>
+    </div>
+    <img class="img-vr" src="../img/vr.png" alt="">
+</div>
+</body>
+</html>
