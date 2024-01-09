@@ -367,6 +367,7 @@ form h1{
     display: flex;
     flex-direction: column;
     padding-top: 200px;
+    margin-bottom: 180px;
     gap: 50px;
 }
 .project-title{
@@ -444,11 +445,13 @@ form h1{
 .project-olimo{
     background-color: #FFFBF6;
     color: #191A1D;
-    width: 90%;
-
+    width: 80%;
     margin: 0 auto;
 }
-
+.text-olimo .column{
+    display: flex;
+    flex-direction: row;
+}
 .text-olimo div{
     display: flex;
     align-items: center;
@@ -467,7 +470,6 @@ form h1{
     line-height: 35px;
     font-size: 20px;
     font-weight: normal;
-    margin-top: 300px;
     display: flex;
     flex-direction: column;
     gap: 100px;
